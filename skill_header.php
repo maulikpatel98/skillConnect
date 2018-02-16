@@ -3,7 +3,7 @@
 	<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Tables - Ace Admin</title>
+		<title>SkillConnect</title>
 
 		<meta name="description" content="Static &amp; Dynamic Tables" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -57,14 +57,16 @@
 				</button>
 
 				<div class="navbar-header pull-left">
+					    <a style="color:white;text-decoration:none;" href="index.php">
 					    <h4>
 							
 							<b class="fa fa-leaf"></b>
 							Skill connect
 						</h4>
+						</a>
 				</div>
 
-				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+				<!-- <div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="grey dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -355,7 +357,7 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div><!-- /.navbar-container -->
 		</div>
 
@@ -369,7 +371,14 @@
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
 
-				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+
+				<ul style="decoration:none">
+					<li>JobSeeker</li>
+					<li>JobProvider</li>
+					<li>College</li>
+				</ul>
+
+				<!-- <div class="sidebar-shortcuts" id="sidebar-shortcuts">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
 						<button class="btn btn-success">
 							<i class="ace-icon fa fa-signal"></i>
@@ -398,14 +407,14 @@
 						<span class="btn btn-danger"></span>
 					</div>
 				</div><!-- /.sidebar-shortcuts -->
-
+ 
 				
-				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+				<!-- <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
 					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
-				</div>
+				</div> -->
 			</div>
 
-			<div class="main-content">
+			<!-- <div class="main-content">
 				<div class="main-content-inner">
 					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
 						<ul class="breadcrumb">
@@ -415,12 +424,17 @@
 							</li>
 
 							<li>
-								<a href="#">Tables</a>
+								<a href="#">Login</a>
 							</li>
-							<li class="active">Simple &amp; Dynamic</li>
-						</ul><!-- /.breadcrumb -->
+ -->
+							<!-- <li>
+								<a href="#">Tables</a>
+							</li> -->
 
-						<div class="nav-search" id="nav-search">
+							<!-- <li class="active">Simple &amp; Dynamic</li>
+						</ul> --><!-- /.breadcrumb -->
+
+						<!-- <div class="nav-search" id="nav-search">
 							<form class="form-search">
 								<span class="input-icon">
 									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
@@ -428,4 +442,4 @@
 								</span>
 							</form>
 						</div><!-- /.nav-search -->
-					</div>
+					<!-- </div> -->

@@ -3,7 +3,7 @@
 	<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
-		<title>Tables - Ace Admin</title>
+		<title>Login</title>
 
 		<meta name="description" content="Static &amp; Dynamic Tables" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -64,7 +64,7 @@
 						</h4>
 				</div>
 
-				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+				<!-- <div class="navbar-buttons navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="grey dropdown-modal">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -377,7 +377,7 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div><!-- /.navbar-container -->
 		</div>
 

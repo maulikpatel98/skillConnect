@@ -4,7 +4,7 @@ session_start();
 
 
 <?php 
- include_once("skill_header1.php");
+ include_once("skill_header.php");
 ?>
 
 <?php 

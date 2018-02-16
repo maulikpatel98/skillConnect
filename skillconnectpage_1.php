@@ -6,6 +6,10 @@ session_start();
 <?php 
  include_once("skill_header.php");
 ?>
+<?php 
+ include_once("maincontent_login.php");
+?>
+
 
 <?php
 
@@ -82,7 +86,7 @@ $ans=mysqli_num_rows($result);
 										</div>
 									</div>
 <br>
-						jobseeker:<input type="radio" name="r1" value="seeker">
+						jobseeker:<input type="radio" name="r1" value="seeker" checked="true">
 						jobprovider:<input type="radio" name="r1" value="provider">
 						college:<input type="radio" name="r1" value="college">
 <br>
