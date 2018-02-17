@@ -10,6 +10,7 @@
 
 		<!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/public.css" />
 		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
 
 		<!-- page specific plugin styles -->
@@ -371,11 +372,35 @@
 					try{ace.settings.loadState('sidebar')}catch(e){}
 				</script>
 
+				<?php 
+					if (!isset($layout_context)) {
+						$layout_context = "none";
+					}
+				?>
 
-				<ul style="decoration:none">
-					<li>JobSeeker</li>
-					<li>JobProvider</li>
-					<li>College</li>
+
+				<ul id="nav">
+					<li
+					<?php
+						if ($layout_context == "seeker") {
+							 echo " class=\"selected\"";
+						}
+					?> >
+					JobSeeker</li>
+					<li
+					<?php
+						if ($layout_context == "provider") {
+							 echo " class=\"selected\"";
+						}
+					?> >
+					JobProvider</li>
+					<li
+					<?php
+						if ($layout_context == "college") {
+							 echo " class=\"selected\"";
+						}
+					?> >
+					College</li>
 				</ul>
 
 				<!-- <div class="sidebar-shortcuts" id="sidebar-shortcuts">

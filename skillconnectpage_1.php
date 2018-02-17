@@ -43,16 +43,19 @@ $ans=mysqli_num_rows($result);
 	{
 	$_SESSION["subid"] = $row["providerID"];
 	$_SESSION["typeid"] = "1" ;
+	$layout_context = "provider";
 	}
 	if($_POST["r1"]=="seeker")
 	{
 	$_SESSION["subid"] = $row["seekerID"];
 	$_SESSION["typeid"] = "2" ;
+	$layout_context = "seeker";
 	}
 	if($_POST["r1"]=="college")
 	{
 	$_SESSION["subid"] = $row["collegeID"];
 	$_SESSION["typeid"] = "3" ;
+	$layout_context = "college";
 	}
 	
 	echo ("<script>location.href='skillconnect_welcome.php'</script>");
