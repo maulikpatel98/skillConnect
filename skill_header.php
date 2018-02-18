@@ -373,6 +373,10 @@
 				</script>
 
 				<?php 
+					if(isset($_SESSION["typeid"])){
+						$id = $_SESSION["typeid"];
+					}
+					else $id = 0;
 					if (!isset($layout_context)) {
 						$layout_context = "none";
 					}
@@ -382,28 +386,28 @@
 				<ul id="nav">
 					<li
 					<?php
-						if ($layout_context == "seeker") {
+						if ($layout_context == "seeker" || $id == 2) {
 							 echo " class=\"selected\"";
 						}
 					?> >
 					JobSeeker</li>
 					<li
 					<?php
-						if ($layout_context == "provider") {
+						if ($layout_context == "provider" || $id == 1) {
 							 echo " class=\"selected\"";
 						}
 					?> >
 					JobProvider</li>
 					<li
 					<?php
-						if ($layout_context == "college") {
+						if ($layout_context == "college" || $id == 3) {
 							 echo " class=\"selected\"";
 						}
 					?> >
 					College</li>
 				</ul>
 
-				<!-- <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+				<!-- <div class="sidebar-shortcuts" id="sidebar-short cuts">
 					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
 						<button class="btn btn-success">
 							<i class="ace-icon fa fa-signal"></i>

@@ -4,7 +4,7 @@ session_start();
 
 <?php 
 $id1=$_SESSION["typeid"];
-$id2=$_SESSION["subid"];
+//$id2=$_SESSION["subid"];
 if($id1 == "1"){
 $layout_context = "provider";
 //echo "welcome you loged in as job provider";
@@ -21,6 +21,11 @@ $layout_context = "college";
 <?php 
  include_once("skill_header.php");
 ?>
-<?php echo " login succesfull "; ?>
+<?php 
+echo " login succesfull <br> "; 
+echo "<h2 style=\"color:green;\"> welcome ".$_SESSION["user"] ."</h2>" ;
+?>
+
+
 </body>
 </html>

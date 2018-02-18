@@ -3,16 +3,12 @@ session_start();
 ?>
 
 
-<?php 
- include_once("skill_header.php");
-?>
-<?php 
- include_once("maincontent_login.php");
-?>
-
 
 <?php
-
+$_SESSION["user"]=null;
+$_SESSION["typeid"]=0;
+include_once("skill_header.php");
+include_once("maincontent_login.php");
 if(isset($_POST["btnlog"]))
 {
 	$user=$_POST["txtno1"];
@@ -29,12 +25,14 @@ $qry="SELECT * FROM college WHERE usrname='$user' and password='$passwd' ";
 
 $conn=mysqli_connect("localhost","root","","skillconnect");
 $result=$conn->query($qry);
+
 //echo "login";
 
 $ans=mysqli_num_rows($result);
 	
 	if($ans==1)
 	{
+	$_SESSION["user"]=$user;
 	echo "successful login";
 	
 	$row=$result->fetch_assoc();
